@@ -1,0 +1,38 @@
+{
+  "name": "@quantecon/github-app",
+  "version": "1.0.0",
+  "description": "A GitHub App to host custom QuantEcon tooling and automations",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": [
+    "github-app",
+    "quantecon",
+    "automation",
+    "style-checker",
+    "spell-checker",
+    "link-checker"
+  ],
+  "author": "QuantEcon",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "@octokit/webhooks-methods": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "octokit": "^5.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "jest": "^30.1.3",
+    "nodemon": "^3.1.10"
+  }
+}
